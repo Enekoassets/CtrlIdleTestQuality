@@ -167,9 +167,7 @@
     await db.collection("videoComparison").add(result);
     console.log("Saved to Firebase!");
     
-    if(responseCount !== attentionCheck1 && responseCount !== attentionCheck2){
-      responseCount++;  
-    }
+    responseCount++;  
     
     if (responseCount < maxResponses) {
       form.reset();
