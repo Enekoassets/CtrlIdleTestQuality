@@ -167,7 +167,7 @@
     await db.collection("videoComparison").add(result);
     console.log("Saved to Firebase!");
     
-    if(videoId != attentionCheck1 && videoId != attentionCheck2){
+    if(responseCount !== attentionCheck1 && responseCount !== attentionCheck2){
       responseCount++;  
     }
     
